@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Roboto";
+  list-style: none;
+  box-sizing: border-box;
+  background: #000;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  height: 8vh;
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav .nav-links ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .nav-links ul li {
+  padding: 0 4px;
+  list-style: none;
+}
+
+nav .nav-links ul li img {
+    height: 150px;
+  transform: scale(0.45);
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg img {
+  width: 110vw;
+  height: 110vh;
+  filter: brightness(0.6);
+}
+
+.moon {
+  position: absolute !important;
+  left: 30vw !important;
+  top: -14vh !important;
+}
+
+.moon img {
+  width: 25%;
+  filter: brightness(0.5);
+}
+
+.text h1 {
+  font-family: 'Stalinist One' !important;
+  font-size: 5vw;
+  color: whitesmoke;
+  letter-spacing: 20px;
+  position: absolute;
+  top: 35vh;
+  left: 34vw;
+}
+
+.text2 h1 {
+  font-family: 'Stalinist One' !important;
+  font-size: 1vw;
+  color: whitesmoke;
+  letter-spacing: px;
+  position: absolute;
+  top: 55vh;
+  left: 60vw;
+}
+
+.jllogo img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 34vw;
+  top: 25vh;
+  z-index: 1;
+  filter: brightness(0.5);
+}
+
+.mid {
+  left: -60vh !important;
+  bottom: -60vh !important;
+  top: unset !important;
+}
+
+.mid img {
+  width: 100%;
+  z-index: 2;
+  left: -100px;
+  top: 50vh !important;
+  filter: brightness(0.6);
+}
+
+.before {
+  right: -70px !important;
+  bottom: -27vh !important;
+  top: 0px !important;
+  left: unset !important;
+  transform: scale(3);
+}
+
+.before img {
+  width: 550px;
+  height: 110vh;
+  z-index: 3;
+  filter: brightness(0.5);
+}
+
+/* SWIPER */
+
+#sectiontwo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.blacktop{
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    background-color: black;
+}
+
+.logobg1 {
+  position: absolute;
+  filter: brightness(0.2);
+  top: 20vh;
+  left: 0;
+  z-index: 1;
+}
+.logobg1 img{
+  height: 77px;
+  filter: drop-shadow(2px 2px 21px rgb(255, 255, 255));
+  animation-name: Mouvement;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-direction: alternate;
+}
+@keyframes Mouvement {
+  from {
+    margin-top: 5px;
+  }
+  to {
+    margin-bottom: -105px;
+  }
+}
+
+.heroes-links {
+  width: 95%;
+  height: 5vh;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.heroes-links .swiper-pagination-bullet {
+  opacity: 0.2;
+  outline: none;
+}
+.heroes-links .swiper-pagination-bullet-active {
+  color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: transparent;
+}
+
+.swiper-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px 0;
+}
+
+.swiper-wrapper {
+  transition-delay: 0.5s;
+}
+
+.swiper-slide {
+  height: 400px !important;
+  width: 90% !important;
+  background: transparent;
+}
+
+.swiper-slide:nth-child(1) .slide-img {
+  background-image: url("images/Batman.png");
+}
+.swiper-slide:nth-child(2) .slide-img {
+  background-image: url("images/Superman.png");
+}
+.swiper-slide:nth-child(3) .slide-img {
+  background-image: url("images/Wonderwoman3.png");
+}
+.swiper-slide:nth-child(4) .slide-img {
+  background-image: url("images/Flash2.png");
+}
+.swiper-slide:nth-child(5) .slide-img {
+  background-image: url("images/Cyborg.png");
+}
+.swiper-slide:nth-child(6) .slide-img {
+  background-image: url("images/Aquaman.png");
+}
+
+.slide-img {
+  background-position: "center";
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  width: 30%;
+  height: 100%;
+}
+
+.slide-number {
+  position: absolute;
+  top: -30px;
+  left: 30%;
+  width: 200px;
+  height: 120px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.slide-number p {
+  font-size: 40px;
+  font-family: "AlphaCentauri" !important;
+  color: #fff;
+  position: relative;
+}
+
+.slide-number p span {
+  position: absolute;
+}
+
+.slide-detail {
+  position: absolute;
+  top: 130px;
+  left: 30%;
+  z-index: 10;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide-detail p {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  opacity: 0.8;
+  line-height: 30px;
+}
+
+.slide-detail p span {
+  position: absolute;
+}
+
+.slide-detail-facts {
+  position: absolute;
+  top: 240px;
+  left: 30%;
+  z-index: 10;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  color: #fff;
+}
+.slide-detail-facts div {
+  display: flex;
+  position: relative;
+}
+.slide-detail-facts div h5 {
+  margin-right: 20px;
+}
+
+.slide-text {
+  position: absolute;
+  top: -150px;
+  left: 22%;
+  z-index: 9;
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+  opacity: 0.1 !important;
+}
+
+.slide-text h4 {
+  color: #fff;
+  font-size: 100px;
+  position: relative;
+}
+.slide-text h4 span {
+  position: absolute;
+}
+
+/* RAIN */
+
+
+.fa-tint {
+	color: white;
+	position: absolute;
+	top: -20px;
+    z-index: 50;
+  animation: fall linear forwards;
+}
+@keyframes fall {
+	to {
+		transform: translateY(103vh);
+	}
+}
