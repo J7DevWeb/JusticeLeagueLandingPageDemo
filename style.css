@@ -312,6 +312,15 @@ section {
   position: absolute;
 }
 
+@media only screen and (max-width: 600px) {
+    .before img{
+         visibility: hidden;
+    }
+    .slide-detail-facts{
+         visibility: hidden;
+    }
+}
+
 /* RAIN */
 
 
